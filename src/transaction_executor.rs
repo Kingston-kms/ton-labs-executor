@@ -27,7 +27,13 @@ use ton_vm::{
     stack::Stack,
 };
 
+// #[cfg(test)]
+// #[path = "tests/test_transaction_executor.rs"]
+// mod tests;
 
+#[cfg(test)]
+#[path = "tests/test_transaction_executor_with_real_data.rs"]
+mod tests_with_real_data;
 
 pub trait StackBuilder {
 

@@ -30,6 +30,9 @@ use ton_vm::{
     int, boolean, stack::{Stack, StackItem, integer::IntegerData}
 };
 
+#[cfg(test)]
+#[path = "tests/test_tick_tock_transaction.rs"]
+mod tests;
 
 pub struct TickTockTransactionExecutor {
     pub config: BlockchainConfig,

@@ -40,6 +40,9 @@ use ton_vm::{
     smart_contract_info::SmartContractInfo, stack::StackItem
 };
 
+#[cfg(test)]
+#[path = "tests/test_tr_phases.rs"]
+mod tests;
 
 const RESULT_CODE_ACTIONLIST_INVALID: i32 = 32;
 const RESULT_CODE_TOO_MANY_ACTIONS:   i32 = 33;
